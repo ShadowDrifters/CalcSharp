@@ -8,3 +8,13 @@ H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs
 H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
 H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
 H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Form1.resources
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe.config
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\bin\Debug\CalcSharp.pdb
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csprojAssemblyReference.cache
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Form1.resources
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Properties.Resources.resources
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.GenerateResource.cache
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
+D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
