@@ -18,3 +18,13 @@ D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.
 D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
 D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
 D:\УЧЕБА!!!!\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe.config
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\bin\Debug\CalcSharp.pdb
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csprojAssemblyReference.cache
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Form1.resources
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Properties.Resources.resources
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.GenerateResource.cache
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
+C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
