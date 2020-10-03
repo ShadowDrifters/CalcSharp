@@ -7,3 +7,4 @@ H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.GenerateResource.
 H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
 H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
 H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
+H:\Drayv\GitHub\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Form1.resources
