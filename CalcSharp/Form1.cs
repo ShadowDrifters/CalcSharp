@@ -12,6 +12,12 @@ namespace CalcSharp
 {
     public partial class Form1 : Form
     {
+        public double result;
+        public string operand;
+        public string firstvalue;
+        public string secondvalue;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -96,5 +102,68 @@ namespace CalcSharp
             else
                 DisplayText.AppendText("0");
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+                
+            firstvalue = DisplayText.Text;
+            DisplayText.Text = "";
+            operand = "+";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            firstvalue = DisplayText.Text;
+            DisplayText.Text = "";
+            operand = "-";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            firstvalue = DisplayText.Text;
+            DisplayText.Text = "";
+            operand = "*";
+        }
+        private void button14_Click(object sender, EventArgs e)
+        {
+            firstvalue = DisplayText.Text;
+            DisplayText.Text = "";
+            operand = "/";
+        }
+        private void button15_Click(object sender, EventArgs e)
+        {
+            secondvalue = DisplayText.Text;
+            DisplayText.Text = "";
+            switch (operand)
+            {
+                case "+" :
+                    result = double.Parse(firstvalue) + double.Parse(secondvalue);
+                    DisplayText.Text = Convert.ToString(result);
+                    break;
+                case "-":
+                    result = double.Parse(firstvalue) - double.Parse(secondvalue);
+                    DisplayText.Text = Convert.ToString(result);
+
+                    break;
+                case "*":
+                    result = double.Parse(firstvalue) * double.Parse(secondvalue);
+                    DisplayText.Text = Convert.ToString(result);
+
+                    break;
+                case "/":
+                    result = double.Parse(firstvalue) / double.Parse(secondvalue);
+                    DisplayText.Text = Convert.ToString(result);
+
+                    break;
+
+
+
+            }
+            
+
+
+        }
+
+       
     }
 }
