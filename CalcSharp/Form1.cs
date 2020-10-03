@@ -156,6 +156,8 @@ namespace CalcSharp
 
                     break;
 
+                default:
+                    break;
 
 
             }
@@ -164,6 +166,11 @@ namespace CalcSharp
 
         }
 
-       
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+            DisplayText.Text = "";
+            operand = "";
+        }
     }
 }
