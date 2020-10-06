@@ -22,7 +22,7 @@ namespace CalcSharp
         public Form1()
         {
             InitializeComponent();
-            this.KeyPreview = true;
+            KeyPreview = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -181,15 +181,15 @@ namespace CalcSharp
         
         // ************************************* Горячие клавиши *********************************************
         
-        private void Form1_One(object sender, KeyEventArgs e)
+         void Form1_KayDawn(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.NumPad1)
+            if (e.KeyValue == (char)Keys.NumPad1)
             {
-                button1.PerformClick();
+                button1_Click(button1, null);
             }
         }
 
-        public void Form1_Two(object sender, KeyEventArgs e)
+        void Form1_Two(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad2)
             {
@@ -198,7 +198,7 @@ namespace CalcSharp
         }
 
 
-        public void Form1_Three(object sender, KeyEventArgs e)
+         void Form1_Three(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad3)
             {
@@ -208,7 +208,7 @@ namespace CalcSharp
 
 
 
-        public void Form1_Four(object sender, KeyEventArgs e)
+         void Form1_Four(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad4)
             {
@@ -218,7 +218,7 @@ namespace CalcSharp
 
 
 
-        public void Form1_Five(object sender, KeyEventArgs e)
+         void Form1_Five(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad5)
             {
@@ -227,7 +227,7 @@ namespace CalcSharp
         }
 
 
-        public void Form1_Six(object sender, KeyEventArgs e)
+         void Form1_Six(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad6)
             {
@@ -236,7 +236,7 @@ namespace CalcSharp
         }
 
 
-        public void Form1_Seven(object sender, KeyEventArgs e)
+         void Form1_Seven(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad7)
             {
@@ -245,7 +245,7 @@ namespace CalcSharp
         }
 
 
-        public void Form1_Eight(object sender, KeyEventArgs e)
+         void Form1_Eight(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad8)
             {
@@ -254,7 +254,7 @@ namespace CalcSharp
         }
 
 
-        public void Form1_Nine(object sender, KeyEventArgs e)
+         void Form1_Nine(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad9)
             {
@@ -263,7 +263,7 @@ namespace CalcSharp
         }
 
 
-        public void Form1_Zero(object sender, KeyEventArgs e)
+         void Form1_Zero(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad0)
             {
@@ -271,6 +271,7 @@ namespace CalcSharp
             }
         }
 
+       
 
 
 
