@@ -16,13 +16,11 @@ namespace CalcSharp
         public string operand;
         public string firstvalue;
         public string secondvalue;
-        public string cv;
-        public string kays;
+
 
         public Form1()
         {
             InitializeComponent();
-            this.KeyPreview = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -175,131 +173,17 @@ namespace CalcSharp
             operand = "";
         }
 
-        
-        
-        
-        
-        // ************************************* Горячие клавиши *********************************************
-        
-        private void Form1_One(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad1)
+        private void DisplayText_KeyPress(object sender, KeyPressEventArgs e)
+        {            
+            if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"[0-9]").Success)
             {
-                button1.PerformClick();
+                e.Handled = true;                       
+            }
+            
+            if (DisplayText.Text == "0")
+            {
+                DisplayText.Text = "";
             }
         }
-
-        public void Form1_Two(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad2)
-            {
-                button2.PerformClick();
-            }
-        }
-
-
-        public void Form1_Three(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad3)
-            {
-                button3.PerformClick();
-            }
-        }
-
-
-
-        public void Form1_Four(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad4)
-            {
-                button4.PerformClick();
-            }
-        }
-
-
-
-        public void Form1_Five(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad5)
-            {
-                button5.PerformClick();
-            }
-        }
-
-
-        public void Form1_Six(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad6)
-            {
-                button6.PerformClick();
-            }
-        }
-
-
-        public void Form1_Seven(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad7)
-            {
-                button7.PerformClick();
-            }
-        }
-
-
-        public void Form1_Eight(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad8)
-            {
-                button8.PerformClick();
-            }
-        }
-
-
-        public void Form1_Nine(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad9)
-            {
-                button9.PerformClick();
-            }
-        }
-
-
-        public void Form1_Zero(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumPad0)
-            {
-                button0.PerformClick();
-            }
-        }
-
-
-
-
-
-
-
-
-
-        /*
-           switch (kays)
-           {
-               case "1":
-                  if (e.KeyCode == Keys.NumPad1)
-                   {
-                       button1.PerformClick();
-                   };
-                   break;
-
-               case "2":
-                   if (e.KeyCode == Keys.NumPad2)
-                   {
-                       button2.PerformClick();
-                   };
-                   break;
-
-               default:
-                   break;
-           }
-           */
-
     }
 }
