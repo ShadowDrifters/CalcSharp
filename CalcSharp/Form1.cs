@@ -16,6 +16,7 @@ namespace CalcSharp
         public string operand;
         public string firstvalue;
         public string secondvalue;
+        public bool point = false;
 
 
         public Form1()
@@ -108,6 +109,7 @@ namespace CalcSharp
                 
             firstvalue = DisplayText.Text;
             DisplayText.Text = "";
+            point = false;
             operand = "+";
         }
 
@@ -115,6 +117,7 @@ namespace CalcSharp
         {
             firstvalue = DisplayText.Text;
             DisplayText.Text = "";
+            point = false;
             operand = "-";
         }
 
@@ -122,14 +125,26 @@ namespace CalcSharp
         {
             firstvalue = DisplayText.Text;
             DisplayText.Text = "";
+            point = false;
             operand = "*";
         }
         private void button14_Click(object sender, EventArgs e)
         {
             firstvalue = DisplayText.Text;
             DisplayText.Text = "";
+            point = false;
             operand = "/";
         }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (point == false)
+            {
+                DisplayText.AppendText(",");
+                point = true;
+            }
+        }
+
         private void button15_Click(object sender, EventArgs e)
         {
             secondvalue = DisplayText.Text;
@@ -151,8 +166,15 @@ namespace CalcSharp
 
                     break;
                 case "/":
-                    result = double.Parse(firstvalue) / double.Parse(secondvalue);
-                    DisplayText.Text = Convert.ToString(result);
+                    if (secondvalue == "0")
+                    {
+                        DisplayText.Text = "Деление на 0";
+                    }
+                    else
+                    {
+                        result = double.Parse(firstvalue) / double.Parse(secondvalue);
+                        DisplayText.Text = Convert.ToString(result);
+                    }
 
                     break;
 
@@ -168,21 +190,25 @@ namespace CalcSharp
 
         private void button10_Click(object sender, EventArgs e)
         {
-
             DisplayText.Text = "";
             operand = "";
+            point = false;
         }
 
-        private void DisplayText_KeyPress(object sender, KeyPressEventArgs e)
-        {            
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
             if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"[0-9]").Success)
             {
-                e.Handled = true;                       
+                e.Handled = true;
             }
-            
-            if (DisplayText.Text == "0")
+            else
             {
-                DisplayText.Text = "";
+                if (DisplayText.Text == "0")
+                {
+                    DisplayText.Text = "";
+                    DisplayText.Text = e.KeyChar.ToString();
+                }
+                else DisplayText.AppendText(e.KeyChar.ToString());
             }
         }
     }

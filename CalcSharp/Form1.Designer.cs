@@ -45,6 +45,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DisplayText
@@ -57,10 +58,11 @@
             this.DisplayText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.DisplayText.MaxLength = 14;
             this.DisplayText.Name = "DisplayText";
-            this.DisplayText.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.DisplayText.ReadOnly = true;
+            this.DisplayText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DisplayText.Size = new System.Drawing.Size(370, 48);
             this.DisplayText.TabIndex = 0;
-            this.DisplayText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DisplayText_KeyPress);
+            this.DisplayText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
@@ -254,6 +256,18 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button14_Click);
             // 
+            // button16
+            // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(14, 272);
+            this.button16.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(66, 42);
+            this.button16.TabIndex = 9;
+            this.button16.Text = ",";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -265,6 +279,7 @@
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -278,10 +293,12 @@
             this.Controls.Add(this.DisplayText);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "КаНкулятор";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,6 +323,7 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
     }
 }
 
