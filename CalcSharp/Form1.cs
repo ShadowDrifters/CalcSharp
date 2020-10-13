@@ -197,9 +197,16 @@ namespace CalcSharp
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"\/|\*|\-|\+|\=|\,|[0-9]").Success)
+            if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"\/|\*|\-|\+|\=|\,|[0-9]").Success) //Для проверки вводимых символов, 
+                                                                                                                        //в данном примере используется метод 
+                                                                                                                        //«Regex.Match». Данный метод ищет во 
+                                                                                                                        //входящей строке все вхождения заданного 
+                                                                                                                        //регулярного выражения. Регулярное выражение 
+                                                                                                                        //представляет собой состоящий из символов 
+                                                                                                                        //шаблон, обозначающий последовательность 
+                                                                                                                        //символов произвольной длины.
             {
-                e.Handled = true;
+                e.Handled = true;                                                                                       //если пользователь ввел нечисло(и не арифметические знаки), и, если да, отменяет KeyPress событие с помощью Handled Свойства.
             }
             else
             {
