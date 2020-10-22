@@ -22,6 +22,36 @@ namespace CalcSharp
         public Form1()
         {
             InitializeComponent();
+            //**********************************Горячие клавиши для чисел через лямду*************************************
+            //**********************************Это код вместо стандартного ниже******************************************
+            //void Form1_KayDawn(object sender, KeyEventArgs e)
+            //{
+            //   if (e.KeyValue == (char)Keys.NumPud1)
+            //  {
+            //      button1_click(button1, null);
+            //  }
+            //
+            //}
+
+            //*******************************************************************************************
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad1) button1_Click(button1, null); }; // При нажатии клавиши НумПад1 происходит нажатие на кнопку 1 которая вызывает сому себя (установленное на неё действие)
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad2) button2_Click(button2, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad3) button3_Click(button3, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad4) button4_Click(button4, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad5) button5_Click(button5, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad6) button6_Click(button6, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad7) button7_Click(button7, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad8) button8_Click(button8, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad9) button9_Click(button9, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad0) button0_Click(button0, null); };
+
+            //**********************************Арифметические знаки*************************************
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Oemplus) button11_Click(button11, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.OemMinus) button12_Click(button12, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Multiply) button13_Click(button13, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Divide) button14_Click(button14, null); };
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Enter) button15_Click(button15, null); };
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -195,7 +225,9 @@ namespace CalcSharp
             point = false;
         }
 
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+  
+
+        /*private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"\/|\*|\-|\+|\=|\,|[0-9]").Success) //Для проверки вводимых символов, 
                                                                                                                         //в данном примере используется метод 
@@ -217,6 +249,6 @@ namespace CalcSharp
                 }
                 else DisplayText.AppendText(e.KeyChar.ToString());
             }
-        }
+        }*/
     }
 }

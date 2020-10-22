@@ -28,3 +28,13 @@ C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\Calc
 C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
 C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
 C:\Users\BoomZoom\Source\Repos\ShadowDrifters\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe.config
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\bin\Debug\CalcSharp.pdb
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csprojAssemblyReference.cache
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Form1.resources
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Properties.Resources.resources
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.GenerateResource.cache
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
+D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
