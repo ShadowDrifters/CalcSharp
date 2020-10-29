@@ -199,6 +199,7 @@ namespace CalcSharp
         {
             DisplayText.Text = "";
             operand = "";
+            result = 0;
             point = false;
         }
 
