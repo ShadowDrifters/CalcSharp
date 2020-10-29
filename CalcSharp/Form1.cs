@@ -13,50 +13,22 @@ namespace CalcSharp
     public partial class Form1 : Form
     {
         public double result;
-        public string operand;
-        public string firstvalue;
-        public string secondvalue;
+        public string operand;        
+        public string secondvalue="";
         public bool point = false;
 
 
         public Form1()
         {
             InitializeComponent();
-            //**********************************Горячие клавиши для чисел через лямду*************************************
-            //**********************************Это код вместо стандартного ниже******************************************
-            //void Form1_KayDawn(object sender, KeyEventArgs e)
-            //{
-            //   if (e.KeyValue == (char)Keys.NumPud1)
-            //  {
-            //      button1_click(button1, null);
-            //  }
-            //
-            //}
-
-            //*******************************************************************************************
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad1) button1_Click(button1, null); }; // При нажатии клавиши НумПад1 происходит нажатие на кнопку 1 которая вызывает сому себя (установленное на неё действие)
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad2) button2_Click(button2, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad3) button3_Click(button3, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad4) button4_Click(button4, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad5) button5_Click(button5, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad6) button6_Click(button6, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad7) button7_Click(button7, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad8) button8_Click(button8, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad9) button9_Click(button9, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.NumPad0) button0_Click(button0, null); };
-           //*/
-            //**********************************Арифметические знаки*************************************
-            
+                       
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Oemplus) button11_Click(button11, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.OemMinus) button12_Click(button12, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Multiply) button13_Click(button13, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Divide) button14_Click(button14, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Enter) button15_Click(button15, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Escape) button10_Click(button10, null); };
-           
-          
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Escape) button10_Click(button10, null); };                    
 
-            // В целях оптимизации кода, для горячих клавишь было написана иная реолизация внзу, смотреть Foem1_KeyDown
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -142,7 +114,7 @@ namespace CalcSharp
         private void button11_Click(object sender, EventArgs e)
         {
                 
-            firstvalue = DisplayText.Text;
+            result = double.Parse(DisplayText.Text);
             DisplayText.Text = "";
             point = false;
             operand = "+";
@@ -150,7 +122,7 @@ namespace CalcSharp
 
         private void button12_Click(object sender, EventArgs e)
         {
-            firstvalue = DisplayText.Text;
+            result = double.Parse(DisplayText.Text);
             DisplayText.Text = "";
             point = false;
             operand = "-";
@@ -158,14 +130,14 @@ namespace CalcSharp
 
         private void button13_Click(object sender, EventArgs e)
         {
-            firstvalue = DisplayText.Text;
+            result = double.Parse(DisplayText.Text);
             DisplayText.Text = "";
             point = false;
             operand = "*";
         }
         private void button14_Click(object sender, EventArgs e)
         {
-            firstvalue = DisplayText.Text;
+            result = double.Parse(DisplayText.Text);
             DisplayText.Text = "";
             point = false;
             operand = "/";
@@ -182,21 +154,21 @@ namespace CalcSharp
 
         private void button15_Click(object sender, EventArgs e)
         {
-            secondvalue = DisplayText.Text;
+            if (secondvalue=="") secondvalue = DisplayText.Text;
             DisplayText.Text = "";
             switch (operand)
             {
                 case "+" :
-                    result = double.Parse(firstvalue) + double.Parse(secondvalue);
+                    result += double.Parse(secondvalue);
                     DisplayText.Text = Convert.ToString(result);
                     break;
                 case "-":
-                    result = double.Parse(firstvalue) - double.Parse(secondvalue);
+                    result -= double.Parse(secondvalue);
                     DisplayText.Text = Convert.ToString(result);
 
                     break;
                 case "*":
-                    result = double.Parse(firstvalue) * double.Parse(secondvalue);
+                    result *= double.Parse(secondvalue);
                     DisplayText.Text = Convert.ToString(result);
 
                     break;
@@ -207,7 +179,7 @@ namespace CalcSharp
                     }
                     else
                     {
-                        result = double.Parse(firstvalue) / double.Parse(secondvalue);
+                        result /= double.Parse(secondvalue);
                         DisplayText.Text = Convert.ToString(result);
                     }
 
@@ -230,135 +202,21 @@ namespace CalcSharp
             point = false;
         }
 
-       /* private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-                case Keys.NumPad1:
-
-                    button1.PerformClick();
-
-                    break;
+       
 
 
-                case Keys.NumPad2:
-
-                    button2.PerformClick();
-
-                    break;
-
-
-                case Keys.NumPad3:
-                    button3.PerformClick();
-
-                    break;
-
-
-                case Keys.NumPad4:
-
-                    button4.PerformClick();
-
-                    break;
-
-
-                case Keys.NumPad5:
-
-                    button5.PerformClick();
-                    
-                    break;
-
-
-                case Keys.NumPad6:
-
-                    button6.PerformClick();
-
-                    break;
-
-
-                case Keys.NumPad7:
-
-                    button7.PerformClick();
-
-                    break;
-
-
-                case Keys.NumPad8:
-
-                    button8.PerformClick();
-
-                    break;
-
-                case Keys.NumPad9:
-
-                    button9.PerformClick();
-
-                    break;
-
-
-                case Keys.NumPad0:
-
-                    button0.PerformClick();
-
-                    break;
-
-
-                case Keys.Oemplus:
-
-                    button11.PerformClick();
-
-                    break;
-
-
-                case Keys.OemMinus:
-
-                    button12.PerformClick();
-
-                    break;
-
-
-                case Keys.Multiply:
-
-                    button13.PerformClick();
-
-                    break;
-
-
-                case Keys.Divide:
-
-                    button14.PerformClick();
-
-                    break;
-
-
-                case Keys.Enter:
-
-                    button15.PerformClick();
-
-                    break;
-
-
-                case Keys.Escape:
-
-                    button10.PerformClick();
-
-                    break;
-            }
-        }
-        */
-
-
-        /* private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
          {
-             if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"\/|\*|\-|\+|\=|\,|[0-9]").Success) //Для проверки вводимых символов, 
-                                                                                                                         //в данном примере используется метод 
-                                                                                                                         //«Regex.Match». Данный метод ищет во 
-                                                                                                                         //входящей строке все вхождения заданного 
-                                                                                                                         //регулярного выражения. Регулярное выражение 
-                                                                                                                         //представляет собой состоящий из символов 
-                                                                                                                         //шаблон, обозначающий последовательность 
-                                                                                                                         //символов произвольной длины.
+             if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"\d").Success) //Для проверки вводимых символов, 
+                                                                                                   //в данном примере используется метод 
+                                                                                                   //«Regex.Match». Данный метод ищет во 
+                                                                                                   //входящей строке все вхождения заданного 
+                                                                                                   //регулярного выражения. Регулярное выражение 
+                                                                                                   //представляет собой состоящий из символов 
+                                                                                                   //шаблон, обозначающий последовательность 
+                                                                                                   //символов произвольной длины.
              {
-                 e.Handled = true;                                                                                       //если пользователь ввел нечисло(и не арифметические знаки), и, если да, отменяет KeyPress событие с помощью Handled Свойства.
+                 e.Handled = true;                                                                 //если пользователь ввел нечисло(и не арифметические знаки), и, если да, отменяет KeyPress событие с помощью Handled Свойства.
              }
              else
              {
@@ -369,6 +227,6 @@ namespace CalcSharp
                  }
                  else DisplayText.AppendText(e.KeyChar.ToString());
              }
-         }*/
+         }
     }
 }

@@ -60,8 +60,9 @@
             this.DisplayText.Name = "DisplayText";
             this.DisplayText.ReadOnly = true;
             this.DisplayText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.DisplayText.Size = new System.Drawing.Size(370, 67);
+            this.DisplayText.Size = new System.Drawing.Size(370, 47);
             this.DisplayText.TabIndex = 0;
+            this.DisplayText.TabStop = false;
             this.DisplayText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
@@ -270,7 +271,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 331);
             this.Controls.Add(this.button14);
@@ -298,7 +299,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "КаНкулятор";
-         //   this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
