@@ -13,21 +13,23 @@ namespace CalcSharp
     public partial class Form1 : Form
     {
         public double result;
-        public string operand;        
-        public string secondvalue="";
+        public string operand;
+        public string secondvalue = "";
         public bool point = false;
+
+
 
 
         public Form1()
         {
             InitializeComponent();
-                       
+
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Oemplus) button11_Click(button11, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.OemMinus) button12_Click(button12, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Multiply) button13_Click(button13, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Divide) button14_Click(button14, null); };
             KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Enter) button15_Click(button15, null); };
-            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Escape) button10_Click(button10, null); };                    
+            KeyDown += (s, e) => { if (e.KeyValue == (char)Keys.Escape) button10_Click(button10, null); };
 
         }
 
@@ -113,7 +115,7 @@ namespace CalcSharp
 
         private void button11_Click(object sender, EventArgs e)
         {
-                
+
             result = double.Parse(DisplayText.Text);
             DisplayText.Text = "";
             point = false;
@@ -154,11 +156,11 @@ namespace CalcSharp
 
         private void button15_Click(object sender, EventArgs e)
         {
-            if (secondvalue=="") secondvalue = DisplayText.Text;
+            if (secondvalue == "") secondvalue = DisplayText.Text;
             DisplayText.Text = "";
             switch (operand)
             {
-                case "+" :
+                case "+":
                     result += double.Parse(secondvalue);
                     DisplayText.Text = Convert.ToString(result);
                     break;
@@ -190,7 +192,7 @@ namespace CalcSharp
 
 
             }
-            
+
 
 
         }
@@ -203,31 +205,43 @@ namespace CalcSharp
             point = false;
         }
 
-       
+
 
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-         {
-             if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"\d").Success) //Для проверки вводимых символов, 
-                                                                                                   //в данном примере используется метод 
-                                                                                                   //«Regex.Match». Данный метод ищет во 
-                                                                                                   //входящей строке все вхождения заданного 
-                                                                                                   //регулярного выражения. Регулярное выражение 
-                                                                                                   //представляет собой состоящий из символов 
-                                                                                                   //шаблон, обозначающий последовательность 
-                                                                                                   //символов произвольной длины.
-             {
-                 e.Handled = true;                                                                 //если пользователь ввел нечисло(и не арифметические знаки), и, если да, отменяет KeyPress событие с помощью Handled Свойства.
-             }
-             else
-             {
-                 if (DisplayText.Text == "0")
-                 {
-                     DisplayText.Text = "";
-                     DisplayText.Text = e.KeyChar.ToString();
-                 }
-                 else DisplayText.AppendText(e.KeyChar.ToString());
-             }
-         }
+        {
+            if (!System.Text.RegularExpressions.Regex.Match(e.KeyChar.ToString(), @"\d").Success) //Для проверки вводимых символов, 
+                                                                                                  //в данном примере используется метод 
+                                                                                                  //«Regex.Match». Данный метод ищет во 
+                                                                                                  //входящей строке все вхождения заданного 
+                                                                                                  //регулярного выражения. Регулярное выражение 
+                                                                                                  //представляет собой состоящий из символов 
+                                                                                                  //шаблон, обозначающий последовательность 
+                                                                                                  //символов произвольной длины.
+            {
+                e.Handled = true;                                                                 //если пользователь ввел нечисло(и не арифметические знаки), и, если да, отменяет KeyPress событие с помощью Handled Свойства.
+            }
+            else
+            {
+                if (DisplayText.Text == "0")
+                {
+                    DisplayText.Text = "";
+                    DisplayText.Text = e.KeyChar.ToString();
+                }
+                else DisplayText.AppendText(e.KeyChar.ToString());
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(DisplayText.Text) * (Math.PI) / 180;
+            DisplayText.Text = Convert.ToString( Math.Cos(result));
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(DisplayText.Text) * (Math.PI) / 180;
+            DisplayText.Text = Convert.ToString(Math.Sin(result));
+        }
     }
 }

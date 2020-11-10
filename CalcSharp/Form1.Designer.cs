@@ -68,7 +68,7 @@
             this.DisplayText.Name = "DisplayText";
             this.DisplayText.ReadOnly = true;
             this.DisplayText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.DisplayText.Size = new System.Drawing.Size(545, 67);
+            this.DisplayText.Size = new System.Drawing.Size(545, 47);
             this.DisplayText.TabIndex = 0;
             this.DisplayText.TabStop = false;
             this.DisplayText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -287,6 +287,7 @@
             this.button17.TabIndex = 10;
             this.button17.Text = "Cos";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -298,6 +299,7 @@
             this.button18.TabIndex = 11;
             this.button18.Text = "Sin";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -367,7 +369,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 331);
             this.Controls.Add(this.button24);
