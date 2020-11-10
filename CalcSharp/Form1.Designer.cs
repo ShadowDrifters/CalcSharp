@@ -287,6 +287,7 @@
             this.button17.TabIndex = 10;
             this.button17.Text = "Cos";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -298,6 +299,7 @@
             this.button18.TabIndex = 11;
             this.button18.Text = "Sin";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
