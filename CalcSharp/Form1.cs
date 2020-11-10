@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CalcSharp
@@ -16,6 +9,7 @@ namespace CalcSharp
         public string operand;        
         public string secondvalue="";
         public bool point = false;
+        public string memory = "";
 
 
         public Form1()
@@ -229,5 +223,20 @@ namespace CalcSharp
                  else DisplayText.AppendText(e.KeyChar.ToString());
              }
          }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            memory = DisplayText.Text;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            DisplayText.Text = memory;
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            memory = "";
+        }
     }
 }
