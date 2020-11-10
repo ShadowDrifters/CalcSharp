@@ -241,15 +241,22 @@ namespace CalcSharp
 
         private void button24_Click(object sender, EventArgs e)
         {
-
+            result = double.Parse(DisplayText.Text) * (Math.PI) / 180;
+            DisplayText.Text = Convert.ToString(Math.Sin(result));
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-
+            result = double.Parse(DisplayText.Text) * (Math.PI) / 180;
+            DisplayText.Text = Convert.ToString(Math.Cos(result));
         }
 
         private void button22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
         {
 
         }
