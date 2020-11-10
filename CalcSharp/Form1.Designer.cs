@@ -68,7 +68,7 @@
             this.DisplayText.Name = "DisplayText";
             this.DisplayText.ReadOnly = true;
             this.DisplayText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.DisplayText.Size = new System.Drawing.Size(545, 67);
+            this.DisplayText.Size = new System.Drawing.Size(545, 47);
             this.DisplayText.TabIndex = 0;
             this.DisplayText.TabStop = false;
             this.DisplayText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -335,39 +335,42 @@
             // button22
             // 
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Location = new System.Drawing.Point(500, 276);
+            this.button22.Location = new System.Drawing.Point(318, 222);
             this.button22.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(66, 42);
             this.button22.TabIndex = 15;
             this.button22.Text = "MC";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button19_Click);
             // 
             // button23
             // 
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Location = new System.Drawing.Point(424, 276);
+            this.button23.Location = new System.Drawing.Point(318, 172);
             this.button23.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(66, 42);
             this.button23.TabIndex = 16;
             this.button23.Text = "MR";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button18_Click);
             // 
             // button24
             // 
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Location = new System.Drawing.Point(348, 276);
+            this.button24.Location = new System.Drawing.Point(318, 122);
             this.button24.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(66, 42);
             this.button24.TabIndex = 17;
             this.button24.Text = "M1";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button17_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 331);
             this.Controls.Add(this.button24);
