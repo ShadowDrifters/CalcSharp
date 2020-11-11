@@ -265,7 +265,7 @@ namespace CalcSharp
 
         private void button21_Click(object sender, EventArgs e)
         {
-            result = double.Parse(DisplayText.Text) * (Math.PI) / 180;
+            result = double.Parse(DisplayText.Text);
             DisplayText.Text = Convert.ToString(Math.Sqrt(result));
         }
     }
