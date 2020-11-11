@@ -68,7 +68,7 @@
             this.DisplayText.Name = "DisplayText";
             this.DisplayText.ReadOnly = true;
             this.DisplayText.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.DisplayText.Size = new System.Drawing.Size(545, 47);
+            this.DisplayText.Size = new System.Drawing.Size(545, 67);
             this.DisplayText.TabIndex = 0;
             this.DisplayText.TabStop = false;
             this.DisplayText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -335,6 +335,7 @@
             this.button21.TabIndex = 14;
             this.button21.Text = "√";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -374,7 +375,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 331);
             this.Controls.Add(this.button24);
