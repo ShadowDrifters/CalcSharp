@@ -309,7 +309,7 @@
             this.button19.TabIndex = 12;
             this.button19.Text = "Ctg";
             this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+
             // 
             // button20
             // 
@@ -321,7 +321,7 @@
             this.button20.TabIndex = 13;
             this.button20.Text = "Tg";
             this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+
             // 
             // button21
             // 
