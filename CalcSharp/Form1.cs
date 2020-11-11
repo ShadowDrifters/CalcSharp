@@ -229,5 +229,76 @@ namespace CalcSharp
                  else DisplayText.AppendText(e.KeyChar.ToString());
              }
          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            result = (double.Parse(DisplayText.Text) * (Math.PI)) / 180;
+            DisplayText.Text = Convert.ToString(Math.Tan(result));
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            result = (double.Parse(DisplayText.Text) * (Math.PI)) / 180;
+            DisplayText.Text = Convert.ToString(Math.Tan(result));
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
