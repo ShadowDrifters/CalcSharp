@@ -146,13 +146,21 @@ namespace CalcSharp
             }
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        public double Equ(string secondvalue, double result)
         {
-            if (secondvalue=="") secondvalue = DisplayText.Text;
+            result += double.Parse(secondvalue);
+            return result; 
+        }
+
+        
+
+        public double Equally(string secondvalue, string operand, double result)
+        {
+            if (secondvalue == "") secondvalue = DisplayText.Text;
             DisplayText.Text = "";
             switch (operand)
             {
-                case "+" :
+                case "+":
                     result += double.Parse(secondvalue);
                     DisplayText.Text = Convert.ToString(result);
                     break;
@@ -184,9 +192,13 @@ namespace CalcSharp
 
 
             }
+            return result;
+        }
+
+        public void button15_Click(object sender, EventArgs e)
+        {
+            Equally(secondvalue, operand, result);
             
-
-
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -265,8 +277,14 @@ namespace CalcSharp
 
         private void button21_Click(object sender, EventArgs e)
         {
+            Sqrt(result);
+        }
+
+        public double Sqrt(double result)
+        {
             result = double.Parse(DisplayText.Text);
             DisplayText.Text = Convert.ToString(Math.Sqrt(result));
+            return double.Parse(DisplayText.Text);
         }
     }
 }

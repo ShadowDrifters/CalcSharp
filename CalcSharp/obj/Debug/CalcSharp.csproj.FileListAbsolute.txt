@@ -38,3 +38,13 @@ D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.GenerateResour
 D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
 D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
 D:\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe.config
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\bin\Debug\CalcSharp.exe
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\bin\Debug\CalcSharp.pdb
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csprojAssemblyReference.cache
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Form1.resources
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.Properties.Resources.resources
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.GenerateResource.cache
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.csproj.CoreCompileInputs.cache
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.exe
+D:\Drayv\Work\MyWorks\GitHubP\CalcSharp\CalcSharp\obj\Debug\CalcSharp.pdb
