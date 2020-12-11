@@ -36,5 +36,6 @@ jobs:
  
     - name: build Solution
       run: msbuild CalcSharp.sln #/p:Configuration-Release
-#    - name: Test
-#      run: dotnet test --no-restore --verbosity normal
+      
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
