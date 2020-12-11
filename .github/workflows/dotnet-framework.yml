@@ -35,6 +35,6 @@ jobs:
       run : nuget restore CalcSharp.sln
  
     - name: build Solution
-      run: msbuild CalcSharp.sln /p:Configuration-Release
+      run: msbuild CalcSharp.sln #/p:Configuration-Release
 #    - name: Test
 #      run: dotnet test --no-restore --verbosity normal
