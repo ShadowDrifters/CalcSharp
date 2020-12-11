@@ -7,7 +7,8 @@ on:
     branches: [ master ]
 
 jobs:
-  Preparation:
+#  Preparation:
+   Build:
 
     runs-on: [ windows-latest ]
   
@@ -30,10 +31,10 @@ jobs:
     - name: setup-NuGet
       uses: NuGet/setup-nuget@v1.0.5
 
-  Build:
-    runs-on: [ windows-latest ]  
-    needs: [Preparation]  
-    steps:      
+#  Build:
+#    runs-on: [ windows-latest ]  
+#    needs: [Preparation]  
+#    steps:      
   
     - name: restore-NuGet pakages
       run : nuget restore CalcSharp.sln
@@ -41,10 +42,10 @@ jobs:
     - name: build Solution
       run: msbuild CalcSharp.sln #/p:Configuration-Release
       
-  Test:
-    runs-on: [ windows-latest ]
-    needs: [Build]
-    steps:
+#  Test:
+#    runs-on: [ windows-latest ]
+#    needs: [Build]
+#    steps:
     
     - name: test solution 
       run: dotnet test --no-restore --verbosity normal
