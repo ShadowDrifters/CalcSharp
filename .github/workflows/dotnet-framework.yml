@@ -31,7 +31,8 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
   Build:
-    runs-on: [ windows-latest ]    
+    runs-on: [ windows-latest ]  
+    needs: [Preparation]  
     steps:      
   
     - name: restore-NuGet pakages
@@ -42,6 +43,7 @@ jobs:
       
   Test:
     runs-on: [ windows-latest ]
+    needs: [Build]
     steps:
     
     - name: test solution 
